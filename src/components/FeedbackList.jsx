@@ -19,7 +19,7 @@ export const FeedbackList = ({ deleteFeedback }) => {
   }
 
   return (
-    <div>
+    <div className="p-5">
       <FeedbackState feedbacklist={feedbacklist} />
       {feedbacklist.map((feedback) => (
         <FeedbackItem

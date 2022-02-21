@@ -50,7 +50,7 @@ export const FeedbackForm = ({ feedback, setFeedback }) => {
         <h2 className="text-lg font-semibold">Rate Our service </h2>
       </div>
       <div>
-        <ul className="flex justify-center gap-5 p-12">
+        <ul className="flex flex-wrap justify-center gap-5 p-12">
           <li>
             <input
               className="hidden"

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Header } from "./components/Header";
+import { FeedbackForm } from "./components/FeedbackForm";
+import { FeedbackList } from "./components/FeedbackList";
 
+// context
+import { FeedbackProvider } from "./context/FeedbackContext";
+
+import { data } from "./data";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FeedbackProvider>
+        <Header />
+        <div className="app container mx-auto flex flex-col justify-center items-center">
+          <FeedbackForm />
+          <FeedbackList />
+        </div>
+      </FeedbackProvider>
+    </>
   );
 }
 

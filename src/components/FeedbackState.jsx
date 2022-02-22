@@ -4,7 +4,6 @@ export const FeedbackState = ({ feedbacklist }) => {
 
     for (var i = 0; i < feedbacklist.length; i++) {
       sumRating += feedbacklist[i].rating;
-      console.log(feedbacklist[i]);
     }
     // return Math.floor(sumRating / feedbacklist.length);
     return (sumRating / feedbacklist.length).toFixed(1).replace(/[.,]0$/, "");

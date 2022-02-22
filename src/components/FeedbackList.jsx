@@ -8,7 +8,7 @@ export const FeedbackList = ({ deleteFeedback }) => {
   const { feedbacklist, isLoading } = useContext(FeedbackContext);
 
   if (isLoading) {
-    return <div class="lds-dual-ring"></div>;
+    return <div className="lds-dual-ring"></div>;
   }
   if (feedbacklist.length === 0) {
     return (

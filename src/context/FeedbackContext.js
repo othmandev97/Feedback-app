@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import { data } from "../data";
 
 const FeedbackContext = createContext();
 
@@ -8,12 +7,6 @@ export const FeedbackProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // const response = fetch("http://localhost:3004/data");
-    // const dataResponse = response.json();
-    // console.log(dataResponse);
-    // data.then((item) => {
-    //   console.log(item);
-    // });
     getFeedback();
   }, []);
 

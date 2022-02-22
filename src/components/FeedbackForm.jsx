@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useContext } from "react";
 import FeedbackContext from "../context/FeedbackContext";
-export const FeedbackForm = ({ feedback, setFeedback }) => {
+export const FeedbackForm = () => {
   const [text, setText] = useState("");
   const [btnstate, setBtnState] = useState("disabled");
   const [selectedRating, setSelectedRating] = useState();

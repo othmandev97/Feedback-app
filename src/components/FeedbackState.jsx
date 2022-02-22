@@ -3,7 +3,8 @@ export const FeedbackState = ({ feedbacklist }) => {
     let sumRating = 0;
 
     for (var i = 0; i < feedbacklist.length; i++) {
-      sumRating = sumRating + feedbacklist[i].rating;
+      sumRating += feedbacklist[i].rating;
+      console.log(feedbacklist[i]);
     }
     // return Math.floor(sumRating / feedbacklist.length);
     return (sumRating / feedbacklist.length).toFixed(1).replace(/[.,]0$/, "");
@@ -16,8 +17,8 @@ export const FeedbackState = ({ feedbacklist }) => {
     <div className="flex justify-between bg-slate-200 p-2 rounded shadow-lg">
       <div>{feedbacklist.length} reviews</div>
       <div>
-        average rating :{" "}
-        {isNaN(calculateTheAverage()) ? 0 : calculateTheAverage()}{" "}
+        average rating :
+        {isNaN(calculateTheAverage()) ? 0 : calculateTheAverage()}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # live preview 
 
-[feedback-app-sepia.vercel.app](feedback-app-sepia.vercel.app)
+[feedback-app-sepia.vercel.app](https://feedback-app-sepia.vercel.app/)
 
 ## Available Scripts
 
